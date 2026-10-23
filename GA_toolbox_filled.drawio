@@ -1,0 +1,197 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="vc6FvdzWy5MhzxDwMOxH">
+    <mxGraphModel dx="1653" dy="1943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="abstract clsChromosome&amp;lt;T&amp;gt;" vertex="1">
+          <mxGeometry height="100" width="160" x="10" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-2" parent="FTJ5Uj4cD3nfB3vDUtBL-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="genes: std::vector&lt;T&gt;" vertex="1">
+          <mxGeometry height="26" width="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-3" parent="FTJ5Uj4cD3nfB3vDUtBL-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="160" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-4" parent="FTJ5Uj4cD3nfB3vDUtBL-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getGenes(): const std::vector&lt;T&gt;&amp;" vertex="1">
+          <mxGeometry height="26" width="160" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-14" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="clsGA_toolbox" vertex="1">
+          <mxGeometry height="180" width="215" x="230" y="283" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-15" parent="FTJ5Uj4cD3nfB3vDUtBL-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ populationSize: std::size_t&lt;br&gt;+ crossoverRate: double&lt;br&gt;+ mutationRate: double&lt;br&gt;+ maxGenerations: std::size_t" vertex="1">
+          <mxGeometry height="90" width="215" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-16" parent="FTJ5Uj4cD3nfB3vDUtBL-14" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="215" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-17" parent="FTJ5Uj4cD3nfB3vDUtBL-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ run(population: std::vector&lt;Chromosome&lt;T&gt;&gt;, fitness: FitnessFunction): Chromosome&lt;T&gt;" vertex="1">
+          <mxGeometry height="56" width="215" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-18" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="floatMutation" vertex="1">
+          <mxGeometry height="120" width="235" x="205" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-19" parent="FTJ5Uj4cD3nfB3vDUtBL-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mutationRate: double" vertex="1">
+          <mxGeometry height="34" width="235" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-20" parent="FTJ5Uj4cD3nfB3vDUtBL-18" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="235" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-21" parent="FTJ5Uj4cD3nfB3vDUtBL-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mutate(chromosome: Chromosome&amp;amp;, mutationRate: double): void" vertex="1">
+          <mxGeometry height="52" width="235" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-33" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-43" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FTJ5Uj4cD3nfB3vDUtBL-34" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="325" y="60" as="sourcePoint" />
+            <mxPoint x="500" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-34" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Tournament" vertex="1">
+          <mxGeometry height="125.5" width="190" x="380" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-35" parent="FTJ5Uj4cD3nfB3vDUtBL-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ tournamentSize: std::size_t" vertex="1">
+          <mxGeometry height="26" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-36" parent="FTJ5Uj4cD3nfB3vDUtBL-34" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="5.75" width="190" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-37" parent="FTJ5Uj4cD3nfB3vDUtBL-34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ select(population: const std::vector&lt;Chromosome&lt;T&gt;&gt;&amp;, fitness: const std::vector&lt;double&gt;&amp;): const Chromosome&lt;T&gt;&amp;" vertex="1">
+          <mxGeometry height="67.75" width="190" y="57.75" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-38" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Rank" vertex="1">
+          <mxGeometry height="135.5" width="160" x="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-39" parent="FTJ5Uj4cD3nfB3vDUtBL-38" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ selectionPressure: double" vertex="1">
+          <mxGeometry height="14" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-40" parent="FTJ5Uj4cD3nfB3vDUtBL-38" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="26" width="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-41" parent="FTJ5Uj4cD3nfB3vDUtBL-38" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ select(population: const std::vector&lt;Chromosome&lt;T&gt;&gt;&amp;, fitness: const std::vector&lt;double&gt;&amp;): const Chromosome&lt;T&gt;&amp;" vertex="1">
+          <mxGeometry height="69.5" width="160" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-42" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-43" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FTJ5Uj4cD3nfB3vDUtBL-38" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="325" y="60" as="sourcePoint" />
+            <mxPoint x="40" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-43" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;selection&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ select(population: const std::vector&amp;lt;Chromosome&amp;lt;T&amp;gt;&amp;gt;&amp;amp;, fitness: const std::vector&amp;lt;double&amp;gt;&amp;amp;): const Chromosome&amp;lt;T&amp;gt;&amp;amp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125.5" width="160" x="250" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-44" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-43" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.461;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;" target="FTJ5Uj4cD3nfB3vDUtBL-14" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="290" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-45" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-2" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.001;entryY=0.623;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.008;exitY=0.943;exitDx=0;exitDy=0;exitPerimeter=0;" target="FTJ5Uj4cD3nfB3vDUtBL-15" value="">
+          <mxGeometry relative="1" width="160" x="-0.3631" as="geometry">
+            <Array as="points" />
+            <mxPoint x="20" y="540" as="sourcePoint" />
+            <mxPoint x="260" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-47" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;clsCrossover&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ cross(parent1: const Chromosome&amp;lt;T&amp;gt;&amp;amp;, parent2: const Chromosome&amp;lt;T&amp;gt;&amp;amp;): std::pair&amp;lt;Chromosome&amp;lt;T&amp;gt;, Chromosome&amp;lt;T&amp;gt;&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="670" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-48" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-47" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.636;exitY=1.031;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FTJ5Uj4cD3nfB3vDUtBL-63" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="940" y="296" as="sourcePoint" />
+            <mxPoint x="900" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-49" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-47" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.548;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;" target="FTJ5Uj4cD3nfB3vDUtBL-54" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="750" y="240" as="sourcePoint" />
+            <mxPoint x="895" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-54" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="order" vertex="1">
+          <mxGeometry height="115.5" width="180" x="590" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-55" parent="FTJ5Uj4cD3nfB3vDUtBL-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ascending: bool" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-56" parent="FTJ5Uj4cD3nfB3vDUtBL-54" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-57" parent="FTJ5Uj4cD3nfB3vDUtBL-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ sort(population: std::vector&lt;Chromosome&lt;T&gt;&gt;&amp;): void" vertex="1">
+          <mxGeometry height="55.5" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-63" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="multi-point" vertex="1">
+          <mxGeometry height="163" width="250" x="850" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-64" parent="FTJ5Uj4cD3nfB3vDUtBL-63" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ crossoverPoints: std::size_t" vertex="1">
+          <mxGeometry height="56" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-65" parent="FTJ5Uj4cD3nfB3vDUtBL-63" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-66" parent="FTJ5Uj4cD3nfB3vDUtBL-63" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ cross(parent1: const Chromosome&lt;T&gt;&amp;, parent2: const Chromosome&lt;T&gt;&amp;): std::pair&lt;Chromosome&lt;T&gt;, Chromosome&lt;T&gt;&gt;" vertex="1">
+          <mxGeometry height="69" width="250" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-67" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-47" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.576;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FTJ5Uj4cD3nfB3vDUtBL-14" value="">
+          <mxGeometry relative="1" width="160" x="-0.5097" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="373" />
+            </Array>
+            <mxPoint x="590" y="370" as="sourcePoint" />
+            <mxPoint x="750" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-68" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;clsMutation&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ mutate(chromosome: Chromosome&amp;lt;T&amp;gt;&amp;amp;, mutationRate: double): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="242.5" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-69" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-14" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FTJ5Uj4cD3nfB3vDUtBL-68" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="340" y="420" as="sourcePoint" />
+            <mxPoint x="430" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-70" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-68" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FTJ5Uj4cD3nfB3vDUtBL-77" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="600" y="660" as="sourcePoint" />
+            <mxPoint x="523" y="728" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-71" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-68" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.556;entryY=-0.034;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="FTJ5Uj4cD3nfB3vDUtBL-73" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="300" y="700" as="sourcePoint" />
+            <mxPoint x="80" y="718" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-72" edge="1" parent="1" source="FTJ5Uj4cD3nfB3vDUtBL-68" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FTJ5Uj4cD3nfB3vDUtBL-18" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="347" y="696" as="sourcePoint" />
+            <mxPoint x="270" y="764" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-73" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="OrderMutation" vertex="1">
+          <mxGeometry height="110" width="180" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-74" parent="FTJ5Uj4cD3nfB3vDUtBL-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mutationRate: double" vertex="1">
+          <mxGeometry height="26" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-75" parent="FTJ5Uj4cD3nfB3vDUtBL-73" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="180" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-76" parent="FTJ5Uj4cD3nfB3vDUtBL-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mutate(chromosome: Chromosome&lt;T&gt;&amp;, mutationRate: double): void" vertex="1">
+          <mxGeometry height="50" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-77" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SwapMutation" vertex="1">
+          <mxGeometry height="100" width="260" x="510" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-78" parent="FTJ5Uj4cD3nfB3vDUtBL-77" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mutationRate: double" vertex="1">
+          <mxGeometry height="26" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-79" parent="FTJ5Uj4cD3nfB3vDUtBL-77" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="FTJ5Uj4cD3nfB3vDUtBL-80" parent="FTJ5Uj4cD3nfB3vDUtBL-77" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ mutate(chromosome: Chromosome&lt;T&gt;&amp;, mutationRate: double): void" vertex="1">
+          <mxGeometry height="40" width="260" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
