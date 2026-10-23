@@ -11,9 +11,20 @@ namespace ga_toolbox {
 template <typename T>
 class Chromosome {
 public:
-    const std::vector<T>& getGenes();
-    bool isValid();
-    Chromosome();
+
+    const std::vector<T>& getGenes() 
+    {
+        return genes; 
+    };
+    bool isValid()
+    {
+        return isvalid; 
+    };
+    Chromosome<T>() 
+    {
+        fitnessValue = -1; 
+        isValid = false; 
+    }
     
     protected:
     std::vector<T> genes;
