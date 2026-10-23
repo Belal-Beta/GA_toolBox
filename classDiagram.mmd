@@ -1,0 +1,91 @@
+classDiagram
+    class Chromosome~T~ {
+        <<abstract>>
+        genes: std::vector~T~
+        fitnessValue: int
+        +getGenes(): const std::vector~T~&
+        +isValid(): bool
+    }
+
+    class GA_toolbox {
+        +populationSize: std::size_t
+        +crossoverRate: double
+        +mutationRate: double
+        +maxGenerations: std::size_t
+        -selectionMethod: Selection
+        -mutationMethod: Mutation
+        -crossoverMethod: Crossover
+        -replacementMehtod: Replacement
+        +run(population: std::vector~Chromosome~T~~, fitness: FitnessFunction, feasibilityCheck: FeasibilityFunction): Chromosome~T~
+    }
+
+    class selection {
+        <<Interface>>
+        +select(population: const std::vector~Chromosome~T~~&, numberOfParents: int): const vector~Chromosome~T~~
+    }
+
+    class Rank {
+    }
+
+    class Tournament {
+        +tournamentSize: std::size_t
+    }
+
+    class Crossover {
+        <<Interface>>
+        +cross(parent1: const Chromosome~T~&, parent2: const Chromosome~T~&): std::pair~Chromosome~T~, Chromosome~T~~
+    }
+
+    class OrderCrossover {
+    }
+
+    class MultiPointCrossover {
+        +crossoverPoints: vector~int~
+    }
+
+    class Mutation {
+        <<Interface>>
+        +mutate(chromosome: Chromosome~T~&, murationRate : double): void
+    }
+
+    class NonUniformFloatMutation {
+        +mutationRate: double
+    }
+
+    class BitFlipMutation {
+        +mutationRate: double
+    }
+
+    class SwapMutation {
+        +mutationRate: double
+    }
+
+    class Replacement {
+        <<Interface>>
+        +replace(population: const vector~Chromosome~T~~&, offSprings: vector~Chromosome~T~~&): void
+    }
+
+    class SteadyStateReplacement {
+    }
+
+    class GenerationalReplacement {
+    }
+
+    selection <|-- Rank : Extends
+    selection <|-- Tournament : Extends
+    
+    Crossover <|-- OrderCrossover : Extends
+    Crossover <|-- MultiPointCrossover : Extends
+    
+    Mutation <|-- NonUniformFloatMutation : Extends
+    Mutation <|-- BitFlipMutation : Extends
+    Mutation <|-- SwapMutation : Extends
+
+    Replacement <|-- SteadyStateReplacement : Extends
+    Replacement <|-- GenerationalReplacement : Extends
+
+    selection --> GA_toolbox
+    Chromosome~T~ --> GA_toolbox
+    Crossover --> GA_toolbox
+    Mutation --> GA_toolbox
+    Replacement --> GA_toolbox
